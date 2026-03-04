@@ -3,7 +3,7 @@ import os, time
 from openpyxl import Workbook, load_workbook
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='../templates')
 excel_workbook = "core_database.xlsx"
 
 @app.route("/")
