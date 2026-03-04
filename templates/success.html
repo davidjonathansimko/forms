@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="{{ theme }}">
+<head>
+    <meta charset="UTF-8">
+    <title>CORE | ARCHIVIERT</title>
+    <style>
+        :root[data-theme="light"] { --accent: #333; --bg: #f4f4f4; --text: #000; }
+        :root[data-theme="dark"] { --accent: #fff; --bg: #0a0a0a; --text: #fff; }
+        body { margin: 0; height: 100vh; background: var(--bg); color: var(--text); font-family: monospace; display: flex; align-items: center; justify-content: center; }
+        .box { border: 1px solid var(--accent); padding: 50px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.5); }
+        h2 { letter-spacing: 5px; text-transform: uppercase; }
+        button { margin-top: 20px; padding: 10px 20px; background: transparent; border: 1px solid var(--accent); color: var(--accent); cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>DATEN ARCHIVIERT</h2>
+        <p>Subjekt <b>{{ name }}</b> transzendiert.</p>
+        <button onclick="location.href='/'">REBOOT SYSTEM</button>
+    </div>
+</body>
+</html>
